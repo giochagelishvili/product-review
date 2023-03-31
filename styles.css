@@ -1,0 +1,174 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color:#F2EBE3;
+}
+
+/* MAIN STYLES */
+.container
+{
+    max-width: 35rem;
+    margin: 2rem;
+
+    border-radius: 1rem;
+    overflow: hidden;
+
+    background-color: #FFFFFF;
+}
+
+#product-mobile
+{
+    width: 100%;
+}
+
+#product-desktop
+{
+    display: none;
+}
+
+/* TEXT STYLES */
+.info-container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 3rem;
+}
+
+#perfume
+{
+    font-family: 'Montserrat', serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    color:#6c7289;
+}
+
+#name
+{
+    font-family: 'Fraunces', serif;
+    font-size: 3.2rem;
+    color:#1c232b;
+}
+
+#description
+{
+    font-family: 'Montserrat', serif;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: #6c7289;
+}
+
+#pricing
+{
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+#price
+{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #3c8067;
+}
+
+#previous-price
+{
+    font-family: 'Montserrat', serif;
+    text-decoration: line-through;
+    color:#6c7289;
+}
+
+#add-to-cart
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    font-family: 'Montserrat', serif;
+    color: #FFFFFF;
+
+    background-color:#3c8067;
+
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 100%;
+
+    box-shadow: 3px 3px 5px -1px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 3px 3px 5px -1px rgba(0,0,0,0.5);
+    -moz-box-shadow: 3px 3px 5px -1px rgba(0,0,0,0.5);
+}
+
+/* TABLET STYLES */
+@media screen and (min-width: 768px) 
+{
+    #product-mobile
+    {
+        display: none;
+    }
+
+    #product-desktop
+    {
+        display: block;
+        width: 100%;
+    }
+
+    .container
+    {
+        max-width: 60rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .info-container
+    {
+        justify-content: space-evenly;
+    }
+
+    #price
+    {
+        font-size: 3rem;
+    }
+
+    #previous-price
+    {
+        font-size: 1.8rem;
+    }
+
+    #add-to-cart
+    {
+        font-size: 2rem;
+        padding: 1.5rem;
+
+        transition: 0.2s;
+    }
+
+    #add-to-cart:hover
+    {
+        cursor: pointer;
+        background-color:#51ab8a;
+    }
+}
