@@ -9,6 +9,6 @@ Overall, I found this project to be a highly enjoyable and rewarding experience 
 
 <h1>Ovewview</h1>
 
-<img src="https://iili.io/HOdhIMQ.md.png">
+<img src="https://iili.io/HOdhIMQ.png">
 
 <a href="https://giochagelishvili.github.io/product-review/">Click here to see the website</a>
